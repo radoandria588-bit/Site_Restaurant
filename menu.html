@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu – PIETRA HOTEL</title>
+  <a href="accueil.html"><button style="font-weight:bold;color:black;border-radius:2px;box-shadow:12px">Retour</button></a>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20;
+      padding:20;
+      background-image: url("assiette.jpg");
+      color: #222;
+    }
+
+    .menu-container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 50px;
+      background: linear-gradient(100deg,#D4AF37,white);
+      border-radius: 12px;
+      box-shadow: 0 7px 20px rgba(0,0,0,0.1);
+      height: 50;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #b32d00; /* couleur restaurant */
+    }
+
+    h2 {
+      margin-top: 30px;
+      color: #d64500;
+      border-bottom: 2px solid #d64500;
+      padding-bottom: 5px;
+    }
+
+    .item {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-bottom: 1px dashed blue;
+    }
+
+    .item-name {
+      font-weight: bold;
+    }
+
+    .item-price {
+      color: #b32d00;
+    }
+
+    /* pour images plus tard si disponibles */
+    .item img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-right: 15px;
+    }
+
+    .with-image {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .card-gallery {
+      border-radius: 12px;
+      margin: 5px;
+    }
+    .gallery{
+      display: grid;grid-template-columns: repeat(2,1,fr);gap: 6px;
+    }
+    .gallery img{
+      width: 100%;
+      height:100%;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+    
+  <div class="menu-container">
+    <h1>MENUS – PIETRA HOTEL</h1>
+
+    <!-- ENTREE -->
+    <h2>ENTRÉES</h2>
+    <div class="item"><span class="item-name">Assiette de crudités Variées</span><span class="item-price">15000 Ar</span></div>
+    <div class="item"><span class="item-name">Salade de tomate Mozarella</span><span class="item-price">20000 Ar</span></div>
+    <div class="item"><span class="item-name">Salade de trésor de la mer</span><span class="item-price">25000 Ar</span></div>
+    <div class="item"><span class="item-name">Coupe de Cocktail de crevettes</span><span class="item-price">25000 Ar</span></div>
+    <div class="item"><span class="item-name">Terrine de Foie gras avec toast</span><span class="item-price">25000 Ar</span></div>
+
+    <!-- PLATS DE RESISTANCE -->
+    <h2>Plats de résistance</h2>
+    <div class="item"><span class="item-name">Hen'omby ritra</span><span class="item-price">35000 Ar</span></div>
+    <div class="item"><span class="item-name">Tilapia Nahandro Gasy</span><span class="item-price">35000 Ar</span></div>
+    <div class="item"><span class="item-name">Côte de porc sauce poivre vert</span><span class="item-price">35000 Ar</span></div>
+    <div class="item"><span class="item-name">Cuisse de poulet aux champignons</span><span class="item-price">35000 Ar</span></div>
+    <div class="item"><span class="item-name">Filet de poisson à la crème vanille</span><span class="item-price">35000 Ar</span></div>
+
+    <!-- DESSERTS -->
+    <h2>Desserts</h2>
+    <div class="item"><span class="item-name">Minestrone de fruit de saison</span><span class="item-price">15000 Ar</span></div>
+    <div class="item"><span class="item-name">Crêpes au confiture ou au chocolat</span><span class="item-price">18000 Ar</span></div>
+    <div class="item"><span class="item-name">Coupe Melba</span><span class="item-price">20000 Ar</span></div>
+
+    <!-- PIZZAS -->
+    <h2>Nos pizzas</h2>
+    <div class="item"><span class="item-name">Hawaïenne</span><span class="item-price">38000 Ar</span></div>
+    <div class="item"><span class="item-name">Napolitaine</span><span class="item-price">38000 Ar</span></div>
+    <div class="item"><span class="item-name">Reine</span><span class="item-price">38000 Ar</span></div>
+    <div class="item"><span class="item-name">Océane</span><span class="item-price">38000 Ar</span></div>
+    <div class="item"><span class="item-name">Quatre fromages</span><span class="item-price">38000 Ar</span></div>
+
+    <!-- SUGGESTIONS -->
+    <h2>Suggestions du chef</h2>
+    <div class="item"><span class="item-name">Plateau de Pané Mixte</span><span class="item-price">40000 Ar</span></div>
+    <p>(Crevette, poisson, poulet, pomme de terre à l'Américaine, Achards de légumes)</p>
+  </div>
+  <aside class="card-gallery">
+    <div class="gallery">
+      <img src="entrée froid.jpg" alt="Desserts">
+      <img src="biera corsa.jpg" alt="Boissons">
+      <img src="pizza.jpg" alt="Pizza">
+      <img src="crêpes.jpg" alt="Crêpes au confiture">
+    </div>
+  </aside>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant d'Antananarivo – Pietra Hotel</title>
+
+    <style>
+        *{
+            margin: 1px;
+            padding: 3px;
+            box-sizing:none;
+            font-family: "Poppins", sans-serif;
+            box-shadow : flex;
+            border: 10;
+        }
+
+        body{
+            background: linear-gradient(90deg,white,gold);
+            color: #333;
+            border-radius: 50%;
+        }
+
+        /* SECTION HERO (BACKGROUND IMAGE) */
+        .hero{
+            height: 46vh;
+            border-radius: 50px;
+            background-image: url("restaurant-ph.jpg"); /* Mets le nom exact de ton image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            border-radius: 50px;
+            background-color: linear-gradient(135deg,skyblue,#1A73E8);
+        }
+
+        /* FILTRE NOIR POUR TEXTE LISIBLE */
+        .hero::after{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .hero-content{
+            position: relative;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        .hero-content h1{
+            font-size: 50px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #fffff;
+        }
+
+        .hero-content h2{
+            font-size: 28px;
+            color: #ff3c30; /* Rouge moderne restauration */
+            margin-bottom: 25px;
+        }
+
+        /* BLOC INFORMATIONS */
+        .info-section{
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 30px;
+            background-color: linear-gradient(135deg,#1E90FF,#FFC0CB)
+            border-radius: 15%;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        .info-section{
+          border-radius: 50px;
+          background: linear-gradient(90deg,skyblue,white)
+        }
+
+        .info-section h3{
+            font-size: 26px;
+            color: #cc0000;
+            border-left: 6px solid #cc0000;
+            padding-left: 12px;
+            margin-bottom: 15px;
+        }
+
+        .info-section p{
+            font-size: 18px;
+            margin-bottom: 12px;
+            line-height: 1.7;
+        }
+
+        .contact a{
+            color: #cc0000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+          .div button{
+            margin-top: 100px;
+            padding: 10px;
+            height: 100vh;
+            width: 10px;
+            text-align: center;
+          }
+        }
+
+        footer{
+            text-align: center;
+            padding: 35px 0;
+            background: linear-gradient(70deg,#fff,#000);
+            color: #fff;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>PIETRA HOTEL</h1>
+            <h2>RESTAURANT D'ANTANANARIVO</h2>
+            <p>Un lieu moderne, chaleureux et raffiné au cœur d’Analakely.</p>
+        </div>
+    </section>
+
+    <!-- INFORMATIONS -->
+    <div class="info-section">
+    <hr>
+        <section>
+    <div style="text-align:center;gap:10px">
+         <a href="menu.html"><button type="submit" class="btn btn-primary" style="font-weight:bold">Nos menus</button></a>
+        <a href="réservation.html"><button type="submit" class="btn btn-primary" style="font-weight:bold">Réservation</button></a>
+        <a href="contact.html"><button type="submit" class="btn btn-primary" style="font-weight:bold">Contact</button></a>
+    </div>
+    </section>
+        <h3>Horaires</h3>
+        <p><strong>Toujours ouvert </strong></p>
+        <p style="font-size:15px;font-weight:bold">Lundi – Dimanche</p>
+        <p>9h - 11h <br>13h - 15h <br>17h - 19h <br> 21h - 23h</p>
+
+        <h3>Coordonnées</h3>
+        <p>• 37 Avenue de l'indépendance, Analakely, Antananarivo, Madagascar 101</p>
+        <p>• 📞 032 26 082 27</p>
+        <p>• 📩 contact@hotelpietra.mg</p>
+
+        <p class="contact">• 
+            🌐 Site officiel :
+            <a href="https://www.hotelpietra.com/fr/" target="_blank">
+                www.hotelpietra.com/fr
+            </a>
+        </p>
+    </div>
+    <hr style="font-weight:bold;">
+
+<label>
+    <footer style="font-weight:bold;color:white">
+        © 2025 – Pietra Hotel – Restaurant d’Antananarivo
+    </footer>
+</label>
+
+</body>
+</html>

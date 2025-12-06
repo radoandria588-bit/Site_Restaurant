@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — PIETRA HOTEL</title>
+  <a href="accueil.html"><button type="submit" class="btn btn-primary">Retour</button></a>
+  <style>
+    :root{
+      background-image: url("téléphone.jpg");
+      --accent:#b33b2b; /* couleur chaude, ajustez si besoin */
+      --muted:#fff;
+      --card:#ffffff;
+      --radius:12px;
+      --max-width:1100px;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:#111;line-height:1.45}
+
+    .container{max-width:var(--max-width);margin:36px auto;padding:18px}
+
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:22px}
+    .brand{display:flex;gap:14px;align-items:center}
+    .logo{width:64px;height:64px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#f09a85);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:18px}
+    h1{font-size:20px;margin:0}
+    p.lead{margin:0;color:var(--muted)}
+
+    .grid{display:grid;grid-template-columns:1fr 440px;gap:20px}
+    @media (max-width:900px){.grid{grid-template-columns:1fr} .logo{width:56px;height:56px}}
+
+    .card{background:linear-gradient(100deg,lightgrey,skyblue);border-radius:var(--radius);padding:20px;box-shadow:0 6px 20px rgba(green)}
+
+    .contact-list{display:grid;gap:12px}
+    .item{display:flex;gap:12px;align-items:flex-start}
+    .item strong{display:block}
+    .meta{color:var(--muted);font-size:14px}
+
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
+
+    form label{display:block;font-size:14px;margin-bottom:6px;color:var(--muted)}
+    form input, form textarea, form select{width:100%;padding:10px 12px;border:1px solid red;border-radius:8px;font-size:15px}
+    form textarea{min-height:120px;resize:vertical}
+    .form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    @media (max-width:600px){.form-row{grid-template-columns:1fr}}
+
+    footer{margin-top:18px;text-align:center;color:var(--muted);font-size:13px}
+
+    .map-wrap{height:280px;border-radius:10px;overflow:hidden}
+    .service-area{margin-top:12px;font-size:14px;color:var(--muted)}
+
+    /* small helper */
+    .icon{width:36px;height:36px;border-radius:8px;background: linear-gradient(90deg,black,white);display:inline-flex;align-items:center;justify-content:center;font-weight:700;color:var(--accent)}
+  </style>
+</head>
+<body>
+    
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">PI</div>
+        <div>
+          <h1>PIETRA HOTEL</h1>
+          <p class="lead">Contact & localisation — Antananarivo</p>
+        </div>
+      </div>
+      <div>
+        <a class="logo" href="Logo de PH"> PH<br>LOGO</a>
+      </div>
+    </header>
+
+    <main class="grid">
+      <!-- Left: Informations + carte -->
+      <section>
+        <div class="card">
+          <h2 style="margin-top:0;margin-bottom:8px">Coordonnées & localisation</h2>
+
+          <div class="contact-list">
+            <div class="item">
+              <div class="icon">📍</div>
+              <div>
+                <strong>Adresse</strong>
+                <p>• 37 Avenue de l'indépendance, Analakely, Antananarivo, Madagascar 101</p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="icon">📞</div>
+              <div>
+                <strong>Téléphone</strong>
+                <div class="meta">
+                  <a href="tel:+261322608227">0322608227</a> / <a href="tel:+261320735107">0320735107</a> / <a href="tel:+261320724688">0320724688</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="icon">✉️</div>
+              <div>
+                <strong>E‑mail</strong>
+                <div class="meta"><a href="mailto:contact@hotelpietra.mg">contact@hotelpietra.mg</a></div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="icon">🔗</div>
+              <div>
+                <strong>Site web</strong>
+                <div class="meta"><a href="https://www.hotelpietra.com/fr/" target="_blank" rel="noreferrer">https://www.hotelpietra.com/fr/</a></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div style="margin-top:16px">
+            <h3 style="margin:0 0 8px 0">Zone de service</h3>
+            <div class="meta">Analakely, Antananarivo, Madagascar</div>
+            <div class="service-area">Nous desservons principalement la zone d'Analakely et centres proches d'Antananarivo.</div>
+          </div>
+
+        </div>
+
+        <div style="height:18px"></di>
+        </div>
+      </section>
+
+      <!-- Right: Formulaire de contact -->
+      <aside>
+        <div class="card">
+          <h2 style="margin-top:0;margin-bottom:10px">Écrivez‑nous</h2>
+          <p class="meta" style="margin-top:0;margin-bottom:12px">Remplissez le formulaire ci‑dessous et nous vous répondrons dès que possible.</p>
+
+          <!-- NOTE: l'attribut action est volontairement vide (POST vers votre backend). Remplacez par l'URL de traitement côté serveur. -->
+          <form method="post" action="" onsubmit="alert('Le formulaire est en démonstration. Configurez l\'action pour envoyer les données.'); return false;">
+
+            <div class="form-row">
+              <div>
+                <label for="name">Votre nom</label>
+                <input id="name" name="name" type="text" placeholder="Ex : Rado Andriamalala" required>
+              </div>
+
+              <div>
+                <label for="phone">Téléphone</label>
+                <input id="phone" name="phone" type="tel" placeholder="032..." required>
+              </div>
+            </div>
+
+            <div style="margin-top:12px">
+              <label for="email">E‑mail</label>
+              <input id="email" name="email" type="email" placeholder="vous@exemple.com" required>
+            </div>
+
+
+            <div style="margin-top:12px">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Votre message..." required></textarea>
+            </div>
+
+            <div style="margin-top:14px;display:flex;gap:10px;align-items:center;justify-content:space-between">
+              <small class="meta" style="color:black">Nous respectons votre vie privée. Vos données ne seront pas partagées.</small>
+              <div>
+                <button type="submit" class="btn">Envoyer</button>
+              </div>
+            </div>
+
+          </form>
+
+        </div>
+      </aside>
+
+    </main>
+
+    <footer>
+      © PIETRA HOTEL — 37 Avenue de l'indépendance, Analakely, Antananarivo
+    </footer>
+  </div>
+</body>
+</html>
