@@ -165,7 +165,7 @@
 
   </div>
             <nav>
-                  <a href="accueil.html"><button type="button" class="btn btn-ghost">Retour</button></a>
+                  <a href="index.html"><button type="button" class="btn btn-ghost">Retour</button></a>
       </nav>
 
   <!-- Modal de confirmation -->
@@ -178,49 +178,5 @@
       </div>
     </div>
   </div>
-
-  <script>
-    const form = document.getElementById('bookingForm');
-    const modal = document.getElementById('modal');
-    const modalContent = document.getElementById('modalContent');
-    const closeModal = document.getElementById('closeModal');
-
-    form.addEventListener('submit', function(e){
-      e.preventDefault();
-      const data = new FormData(form);
-      const name = data.get('name');
-      const phone = data.get('phone');
-      const date = data.get('date');
-      const time = data.get('time');
-      const people = data.get('people');
-      const notes = data.get('notes') || '-';
-
-      modalContent.innerHTML = `
-        <div class="modal-row"><strong>Nom :</strong> ${escapeHtml(name)}</div>
-        <div class="modal-row"><strong>Téléphone :</strong> ${escapeHtml(phone)}</div>
-        <div class="modal-row"><strong>Date :</strong> ${escapeHtml(date)}</div>
-        <div class="modal-row"><strong>Heure :</strong> ${escapeHtml(time)}</div>
-        <div class="modal-row"><strong>Personnes :</strong> ${escapeHtml(people)}</div>
-        <div class="modal-row"><strong>Remarques :</strong> ${escapeHtml(notes)}</div>
-        <div style="margin-top:8px; font-size:13px; color:var(--muted)">Cette réservation n'est pas encore envoyée au serveur. Intégration serveur possible (PHP / Node) si vous le souhaitez.</div>
-      `;
-
-      modal.classList.add('open');
-      modal.setAttribute('aria-hidden', 'false');
-    });
-
-    closeModal.addEventListener('click', ()=>{ modal.classList.remove('open'); modal.setAttribute('aria-hidden','true'); });
-
-    // simple escaping
-    function escapeHtml(str){
-      if(!str) return '';
-      return String(str)
-        .replace(/&/g, '&amp;')
-        .replace(/</g, '&lt;')
-        .replace(/>/g, '&gt;')
-        .replace(/"/g, '&quot;')
-        .replace(/'/g, '&#39;');
-    }
-  </script>
 </body>
 </html>
