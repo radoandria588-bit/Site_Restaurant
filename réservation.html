@@ -6,36 +6,36 @@
   <title>Réservation — PIETRA HOTEL</title>
   <style>
     :root{
-      --bg1:#0f172a; /* deep navy */
+      --bg1:#fbfdff; /* deep navy */
       --bg2:#0ea5a4; /* teal */
-      --card:#000;
+      --card:blue;
       --muted:#fff;
       --accent-start:#D4AF37;
-      --accent-end:#af002d;
+      --accent-end:#af050d;
       --radius:14px;
-      --maxw:520px;
+      --maxw:540px;
       font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
     }
 
     *{box-sizing:border-box}
     html,body{height:100%}
     body{
-      margin-left: 4px;
-      min-height:50%;
+      margin: 10px;
+      min-height:0px%;
       background-image: url("img2.jpg");
-      display:flex;
+      display:block;
       align-items:center;
       justify-content:center;
       padding:0px;
-      color:#0b1220;
+      color:#0b1211;
     }
 
     .card{
       width:100%;
       max-width:var(--maxw);
-      background: linear-gradient(180deg,black,grey);
+      background: linear-gradient(180deg,black,grey,skyblue);
       border-radius:var(--radius);
-      box-shadow: 0 10px 30px rgba(2,6,23,0.45);
+      box-shadow: blue;
       overflow:hidden;
     }
 
@@ -43,18 +43,18 @@
       padding:22px 24px;
       background: linear-gradient(90deg,var(--accent-start), var(--accent-end));
       color:white;
-      display:flex;
-      gap:12px;
+      display:block;
+      gap:100px;
       align-items:center;
     }
     .brand{
       font-weight:700;
-      font-size:18px;
+      font-size:20px;
       letter-spacing:0.6px;
     }
-    .subtitle{font-size:13px; opacity:0.95}
+    .subtitle{font-size:13pxpx; opacity:0.95}
 
-    form{padding:22px; display:grid; gap:14px}
+    form{padding:22px; display:grid; gap:20px}
 
     label{display:block; font-size:13px; color:var(--muted); margin-bottom:6px}
     .row{display:grid; grid-template-columns:1fr 1fr; gap:12px}
@@ -63,7 +63,7 @@
       padding:12px 12px;
       border-radius:10px;
       border:1px solid rgba(15,23,42,0.06);
-      background:linear-gradient(180deg,#fff,#fbfdff);
+      background:linear-gradient(180deg,skyblue,lightyellow);
       font-size:14px;
       outline:none;
       box-shadow:inset 0 1px 0 rgba(2,6,23,0.02);
@@ -110,6 +110,9 @@
   </style>
 </head>
 <body>
+              <nav style="color:red">
+                  <a href="index.html"><button type="submit" class="btn btn-primary">Retour</button></a>
+      </nav>
    
       <div class="card" role="region" aria-label="Réservation Pietra Hotel">
     <div class="hero">
@@ -123,12 +126,12 @@
     <form id="bookingForm" autocomplete="on">
       <div>
         <label for="name">Votre nom</label>
-        <input id="name" name="name" type="text" placeholder="Jean Rakoto" required />
+        <input id="name" name="name" type="text" placeholder="Feno" required />
       </div>
 
       <div>
         <label for="phone">Votre téléphone</label>
-        <input id="phone" name="phone" type="tel" placeholder="0341234567" pattern="[0-9+\s-]{6,20}" required />
+        <input id="phone" name="phone" type="tel" placeholder="034 14 109 46" pattern="[0-9+\s-]{6,20}" required />
         <div class="small">Entrez un numéro valide (chiffres, +, espaces ou -).</div>
       </div>
 
@@ -137,7 +140,7 @@
           <label for="date">Date</label>
           <input id="date" name="date" type="date" required />
         </div>
-        <div>
+        <div class="time">
           <label for="time">Heure souhaitée</label>
           <input id="time" name="time" type="time" required />
         </div>
@@ -164,9 +167,7 @@
     </form>
 
   </div>
-            <nav>
-                  <a href="index.html"><button type="button" class="btn btn-ghost">Retour</button></a>
-      </nav>
+
 
   <!-- Modal de confirmation -->
   <div id="modal" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
